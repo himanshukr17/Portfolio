@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 // import resume from '../../images/resume.pdf';  --The pdf format is not loading
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudfare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 import resume from '../../images/resume.doc'
+import Slogo from "../../images/Slogo.png"
 const Header = () => { 
   // const headerRef = useRef(null); -  this is for sticky navbar
 
@@ -32,11 +33,13 @@ const Header = () => {
         <div className='flex items-center justify-between'>
           {/* logo start */}
           <div className='flex itmes-center gap-[10px]'>
-            <span className='w-[35px] h-[35px] mt-2 bg-white text-black text-[18px] font-[500]
-            rounded-full flex items-center justify-center'><b>HS</b></span>
+            <span className='w-[50px] h-[50px] mt-0 text-black text-[18px] font-[500]
+            rounded-full flex items-center justify-center'>
+              <img src={Slogo}/>
+              </span>
 
             <div className='leading-[20px]'>
-              <h2 className='text-xl text-white font-[700]'>Himanshu Sharma</h2>
+              <h2 className='text-xl text-white font-[700]'>Samishti Infotech Pvt. Ltd.</h2>
               <p className='text-white text-[14px] mb-1 font-[500]'>Portfolio</p>
             </div>
           </div>
@@ -47,21 +50,21 @@ const Header = () => {
             <ul className='flex  items-center gap-10'>
               <li className='text-white font-[600]'><a href='#about'>About</a></li>
               <li className='text-white font-[600]'><a href='#services'>Services</a></li>
-              <li className='text-white font-[600]'><a href='#portfolio'>Portfolio</a></li>
+              <li className='text-white font-[600]'><a href='#portfolio'>Products</a></li>
               <li className='text-white font-[600]'><a href='#contact'>Contact</a></li>
             </ul>
           </div>
           {/* menu end */}
 
           {/* menu-right */}
-          <div className='flex items-center gap-4'>
+          {/* <div className='flex items-center gap-4'>
             <a href={resume} download='Resume'><button className=' md:flex md:items-center mx-4 my-6 md:my-0 flex items-center gap-2 text-white font-[600] border border-solid
             border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white
             hover:font-[500] ease-in duration-200'><i class="ri-mail-download-line"></i>Resume</button></a>
             <span onClick={toggleMenu} className='text-2xl text-smallTextColor md:hidden cursor-pointer'>
               <i class="ri-menu-line"></i>
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

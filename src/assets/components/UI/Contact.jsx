@@ -22,7 +22,7 @@ const Contact = () => {
                 <h2 className='text-headingColor font-[700] text-[2.5rem] mb-8'>Get in touch</h2>
                 <div className='md:flex justify-between items-center'>
                     <div className='w-full md:w-1/2 h-300px sm:h-[450px]'>
-                        <iframe title='google-maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14023.77983407262!2d77.32436216845853!3d28.4089134072247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5fb0a1bd8f1%3A0x3f6c8d401538c9d8!2sFaridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1683802476265!5m2!1sen!2sin"
+                        <iframe title='google-maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.9633984562165!2d77.31120067501878!3d28.570861786879455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5128008104f%3A0x22e6ef4d34b33f1!2sSamishti%20Infotech!5e0!3m2!1sen!2sin!4v1701335162555!5m2!1sen!2sin"
                             className='border-0 w-full h-full' allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>

@@ -10,6 +10,15 @@ import react from '../../images/react.svg';
 import pyImage from '../../images/pyImage.png';
 import mongo from "../../images/mongo.svg"
 import redux from "../../images/redux.png"
+import AMS from "../../images/AMS.png"
+import CS from "../../images/CS.png"
+import DS from "../../images/DS.png"
+import IMS from "../../images/IMS.png"
+import PS from "../../images/PS.png"
+import SBTS from "../../images/SBTS.png"
+import SMS from "../../images/SMS.png"
+import STS from "../../images/STS.png"
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
@@ -43,7 +52,7 @@ const Services = () => {
         <section id="services">
             <div className='container lg:pt-5'>
                 <div className='text-center'>
-                    <h2 className='text-headingColor font-[800] text-[2.4rem] mb-5'>Skill Set</h2>
+                    <h2 className='text-headingColor font-[800] text-[2.4rem] mb-5'>Services</h2>
                     <p className='lg:max-w-[600px] lg:max-auto justify-between text-headingcolor font-[500] text-[16px] leading-7 '></p>
                 </div>
 
@@ -62,7 +71,7 @@ const Services = () => {
 
                                             <div data-aos='fade-right' data-aos-duration='1200' className=' p-4 bg-white rounded group shadow 
                                         cursor-pointer ease-in duration-150'>
-                                                <h3 className='flex items-center text-[20px]'><img className='h-[40px] w-[40px] items-center ml-8 mr-7' src={react}></img>React Native</h3>
+                                                <h3 className='flex items-center text-[20px]'><img className='h-[40px] w-[40px] items-center ml-8 mr-7' src={STS}></img>SAP Technical Services</h3>
 
                                             </div>
                                         </div>
@@ -84,7 +93,7 @@ const Services = () => {
                                         <div className='w-full sm:w-1/2 sm:pl-8'>
                                             <div data-aos='fade-left' data-aos-duration='1200' className='bg-white p-4 rounded group shadow 
                                         cursor-pointer ease-in duration-150'>
-                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[40px] items-center ml-10 mr-5' src={react}></img>ReactJs</h3>
+                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[40px] items-center ml-0 mr-5' src={SBTS}></img>SAP Business Transformational Services</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -103,7 +112,7 @@ const Services = () => {
                                         <div className='w-full sm:w-1/2 sm:pr-8'>
                                             <div data-aos='fade-right' data-aos-duration='1200' className='bg-white p-4 rounded group shadow 
                                         cursor-pointer ease-in duration-150'>
-                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[40px] items-center ml-8 mr-5' src={javascript}></img>Javascript</h3>
+                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[40px] items-center ml-8 mr-5' src={DS}></img>Development Services</h3>
                                                 {/* <h3 className='text-primaryColor font-[700] text-center mt-3 mb-3 group-hover:text-white group-hover:font[600] text-xl'> */}
                                                 {/* Java */}
                                                 {/* <i class="ri-javascript-fill"></i></h3> */}
@@ -125,7 +134,7 @@ const Services = () => {
                                         <div className='w-full sm:w-1/2 sm:pl-8'>
                                             <div data-aos='fade-left' data-aos-duration='1200' className='bg-white p-4 rounded group shadow 
                                         cursor-pointer ease-in duration-150'>
-                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[42px] items-center ml-10 mr-5' src={redux}></img>Redux</h3>
+                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[42px] items-center ml-0 mr-5' src={PS}></img>Product Suite</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -144,7 +153,7 @@ const Services = () => {
                                         <div className='w-full sm:w-1/2 sm:pr-8'>
                                             <div data-aos='fade-right' data-aos-duration='1200' className='bg-white p-4 rounded group shadow 
                                         cursor-pointer ease-in duration-150'>
-                                                <h3 className='flex items-center text-[20px] group-hover:'><img className='h-[40px] w-[40px] items-center ml-8 mr-5' src={html}></img>HTML & CSS</h3>
+                                                <h3 className='flex items-center text-[20px] group-hover:'><img className='h-[40px] w-[40px] items-center ml-8 mr-5' src={SMS}></img>Support & Maintenance Services</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -162,7 +171,7 @@ const Services = () => {
                                         <div className='w-full sm:w-1/2 sm:pl-8'>
                                             <div data-aos='fade-left' data-aos-duration='1200' className='bg-white p-4 rounded group shadow 
                                         cursor-pointer ease-in duration-150'>
-                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[50px] items-center ml-10 mr-5' src={node}></img>NodeJs</h3>
+                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[50px] items-center ml-0 mr-5' src={IMS}></img>Integration / Middleware Services</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -180,7 +189,7 @@ const Services = () => {
                                         <div className='w-full sm:w-1/2 sm:pr-8'>
                                             <div data-aos='fade-right' data-aos-duration='1200' className='bg-white p-4 rounded group shadow 
                                         cursor-pointer ease-in duration-150'>
-                                                <h3 className='flex items-center text-[20px] group-hover:'><img className='h-[40px] w-[40px] items-center ml-8 mr-5' src={mongo}></img>MongoDB</h3>
+                                                <h3 className='flex items-center text-[20px] group-hover:'><img className='h-[40px] w-[40px] items-center ml-8 mr-5' src={AMS}></img>Application Management Services</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -198,7 +207,7 @@ const Services = () => {
                                         <div className='w-full sm:w-1/2 sm:pl-8'>
                                             <div data-aos='fade-left' data-aos-duration='1200' className='bg-white p-4 rounded group shadow 
                                         cursor-pointer ease-in duration-150'>
-                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[40px] items-center ml-10 mr-5' src={pyImage}></img>Python</h3>
+                                                <h3 className='flex items-center text-[20px] '><img className='h-[40px] w-[40px] items-center ml-0 mr-5' src={CS}></img>Cloud Services</h3>
                                             </div>
                                         </div>
                                     </div>
