@@ -1,19 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import emailsjs from 'emailjs-com';
 import { useRef } from "react";
 
 
 const Contact = () => {
     const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const [state,setState]= useState({Name:"",Email:"",Mobile:"",Message:""})
+    const setvalue = (val) => {
+        setState({ ...state, ...val })
+        // console.log(val);
+    }
+// console.log(state);
+    const sendEmail = async(e) => {
         
-        emailsjs.sendForm('service_lhc9qvj', 'template_f29srhg', form.current, 'p3ovuG5gt4Bwk35Cs' )
-            .then((result)=>{
-                console.log(result.text);
-            }, (error) =>{
-                console.log(error.text);
-            });
+        e.preventDefault();
+        console.log("000000000",state)
+        await fetch('http://suprsales.io:4000/add_review', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          // Add any other headers if needed
+        },
+        body: JSON.stringify(state),
+      }).then(res=>alert("Form fill successfuly"),setState({Name:"",Email:"",Mobile:"",Message:""})).catch(err=>console.log(err))
+        // emailsjs.sendForm('service_lhc9qvj', 'template_f29srhg', form.current, 'p3ovuG5gt4Bwk35Cs' )
+        //     .then((result)=>{
+        //         console.log(result.text);
+        //     }, (error) =>{
+        //         console.log(error.text);
+        //     });
         
     };
     return (
@@ -30,13 +45,16 @@ const Contact = () => {
                     <div className='w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 px-4 lg:px-8 py-8'>
                         <form className='w-full' ref={form} onSubmit={sendEmail}>
                             <div className='mb-5'>
-                                <input type='text' name='user_name' placeholder='Enter your name' className='w-full p-3 focus:outline-none rounded-[5px]'></input>
+                                <input type='text' name='user_name' placeholder='Enter your name' className='w-full p-3 focus:outline-none rounded-[5px]' onChange={e=>setvalue({Name:e.target.value})} value={state.Name}></input>
                             </div>
                             <div className='mb-5'>
-                                <input type='text' name='user_email' placeholder='Enter your email' className='w-full p-3 focus:outline-none rounded-[5px]'></input>
+                                <input type='text' name='user_email' placeholder='Enter your email' className='w-full p-3 focus:outline-none rounded-[5px]'onChange={e=>setvalue({Email:e.target.value})} value={state.Email}></input>
                             </div>
                             <div className='mb-5'>
-                                <textarea type='text' name='message' rows={3} placeholder='Write Your Message' className='w-full p-3 focus:outline-none rounded-[5px]'></textarea>
+                                <input type='text' name='user_mobile' placeholder='Enter your mobile number' className='w-full p-3 focus:outline-none rounded-[5px]'onChange={e=>setvalue({Mobile:e.target.value})} value={state.Mobile}></input>
+                            </div>
+                            <div className='mb-5'>
+                                <textarea type='text' name='message' rows={3} placeholder='Write Your Message' className='w-full p-3 focus:outline-none rounded-[5px]'onChange={e=>setvalue({Message:e.target.value})} value={state.Message}></textarea>
                             </div>
 
                             <button type='submit' className='w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor text-white hover:bg-headingColortext-center ease-linear duration-150'>

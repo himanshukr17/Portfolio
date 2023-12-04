@@ -43,7 +43,7 @@ const Portfolio = () => {
                         </h3>
                     </div>
 
-                    <div className='flex gap-4'>
+                    {/* <div className='flex gap-4'>
                         <button onClick={() => setSelectTab('all')} className='bg-smallTextColor bg-black text-white font-[500] gap-2 hover:bg-smallTextColor
                     ease-in duration-100 py-2 px-4 rounded-[8px]'>
                             All
@@ -56,7 +56,7 @@ const Portfolio = () => {
                     ease-in duration-100 py-2 px-4 rounded-[8px]'>
                             UI/UX
                         </button>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className='flex items-center gap-4 flex-wrap mt-12'>
@@ -66,9 +66,9 @@ const Portfolio = () => {
                                 <figure><img className='rounded-[8px]' src={portfolio.imgUrl} alt='' /></figure>
 
                                 <div className='w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
-                                    <div className='w-full h-full flex items-center justify-center'>
+                                    {/* <div className='w-full h-full flex items-center justify-center'>
                                         <button className='text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] 
-                                        font-[500] ease-in duration-200'>  <a target='_blank' href = { portfolio.siteUrl && portfolio.siteUrl}> Details </a> </button></div>
+                                        font-[500] ease-in duration-200'>  <a target='_blank' href = { portfolio.siteUrl && portfolio.siteUrl}> Details </a> </button></div> */}
                                 </div>
                             </div>
                         ))

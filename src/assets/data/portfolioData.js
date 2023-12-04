@@ -1,15 +1,17 @@
-import portfolioImg01 from "../images/portfolio.png";
-import portfolioImg02 from "../images/portfolio-02.jpg";
-import portfolioImg03 from "../images/portfolio-03.jpg";
-import portfolioImg04 from "../images/portfolio-04.jpg";
-import portfolioImg05 from "../images/portfolio-05.jpg";
-import portfolioImg06 from "../images/portfolio-06.jpg";
-import portfolioImg07 from "../images/portfolio-07.jpg";
+import portfolioImg01 from "../images/MicrosoftTeams-image (49).jpeg";
+import portfolioImg02 from "../images/MicrosoftTeams-image (50).jpeg";
+import portfolioImg03 from "../images/MicrosoftTeams-image (51).jpeg";
+import portfolioImg04 from "../images/MicrosoftTeams-image (52).jpeg";
+import portfolioImg05 from "../images/MicrosoftTeams-image (53).jpeg";
+import portfolioImg06 from "../images/MicrosoftTeams-image (54).jpeg";
+import portfolioImg07 from "../images/MicrosoftTeams-image (55).jpeg";
+import portfolioImg08 from "../images/MicrosoftTeams-image (56).jpeg";
+import portfolioImg09 from "../images/MicrosoftTeams-image (49) 2.jpeg";
 
 const portfolios = [
   {
     id: "01",
-    imgUrl: portfolioImg01,
+    imgUrl: portfolioImg07,
     category: "Web Design",
     title: "Finance Technology Website",
     description:
@@ -20,7 +22,7 @@ const portfolios = [
   },
   {
     id: "02",
-    imgUrl: portfolioImg04,
+    imgUrl: portfolioImg06,
     category: "Ux",
     title: "Video Conference Website",
     description:
@@ -30,7 +32,7 @@ const portfolios = [
   },
   {
     id: "03",
-    imgUrl: portfolioImg02,
+    imgUrl: portfolioImg09,
     category: "Ux",
     title: "Multimedia Sharing Website",
     description:
@@ -40,7 +42,7 @@ const portfolios = [
   },
   {
     id: "04",
-    imgUrl: portfolioImg05,
+    imgUrl: portfolioImg01,
     category: "Web Design",
     title: "Landing Page",
     description:
@@ -50,7 +52,7 @@ const portfolios = [
   },
   {
     id: "05",
-    imgUrl: portfolioImg03,
+    imgUrl: portfolioImg05,
     category: "Web Design",
     title: "Landing Page",
     description:
@@ -61,7 +63,7 @@ const portfolios = [
 
   {
     id: "06",
-    imgUrl: portfolioImg06,
+    imgUrl: portfolioImg02,
     category: "Ux",
     title: "Online Therapy Website",
     description:
@@ -71,7 +73,7 @@ const portfolios = [
   },
   {
     id: "07",
-    imgUrl: portfolioImg07,
+    imgUrl: portfolioImg04,
     category: "Web Design",
     title: "Appointment Booking Website",
     description:
@@ -84,7 +86,7 @@ const portfolios = [
   },
   {
     id: "08",
-    imgUrl: portfolioImg01,
+    imgUrl: portfolioImg08,
     category: "Web Design",
     title: "Finance Technology Website",
     description:
@@ -96,73 +98,18 @@ const portfolios = [
     siteUrl: "#",
   },
   {
-    id: "09",
-    imgUrl: portfolioImg02,
-    category: "Ux",
-    title: "Video Conference Website",
-    description:
-      `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque 
-      repellendus amet a velit. Dolorem quidem animi doloribus saepe!`,
-    technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
-    siteUrl: "#",
-  },
-  {
-    id: "10",
+    id: "08",
     imgUrl: portfolioImg03,
-    category: "Ux",
-    title: "File Sharing Website",
+    category: "Web Design",
+    title: "Finance Technology Website",
     description:
       `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim,
-       temporibus dignissimos atque repellendus amet a velit. Dolorem 
-       quidem animi doloribus saepe!`,
+      Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, 
+      temporibus dignissimos atque repellendus amet a velit. Dolorem 
+      quidem animi doloribus saepe!`,
     technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
     siteUrl: "#",
-  },
-  {
-    id: "11",
-    imgUrl: portfolioImg04,
-    category: "Web Design",
-    title: "Landing Page",
-    description:
-      `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-       Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, 
-      temporibus dignissimos atque repellendus amet a velit. Dolorem quidem 
-      animi doloribus saepe!`,
-    technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
-    siteUrl: "#",
-  },
-  {
-    id: "12",
-    imgUrl: portfolioImg05,
-    category: "Web Design",
-    title: "Landing Page",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
-    technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
-    siteUrl: "#",
-  },
-  {
-    id: "13",
-    imgUrl: portfolioImg06,
-    category: "Web Design",
-    title: "Online Therapy Website",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
-    technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
-    siteUrl: "#",
-  },
-  {
-    id: "14",
-    imgUrl: portfolioImg07,
-    category: "ux",
-    title: "Appointment Booking Website",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
-    technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
-    siteUrl: "#",
-  },
+  }
 ];
 
 export default portfolios;
